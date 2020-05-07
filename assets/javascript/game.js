@@ -59,5 +59,12 @@ const numreset = document.querySelector('#num-resets')
 reset.addEventListener('click', function(){
     let numresettot = Number(numreset.innerText) +1;
 numreset.innerText = numresettot;
- 
+    let shotsTwo = Number(shootTwo.innerText) +1;
+shootTwo.innerText = Number(0);
+    let shotsOne = Number(shootOne.innerText) +1;
+shootOne.innerText = Number(0);
+    let totshotsTwo = Number(teamGoal2.innerText) +1;
+teamGoal2.innerText = Number(0)
+    let totshotsOne = Number(teamGoal.innerText) +1;
+teamGoal.innerText = Number(0)
 })
