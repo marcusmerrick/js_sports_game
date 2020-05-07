@@ -63,7 +63,7 @@ const reset = document.querySelector('#reset-button')
 const numreset = document.querySelector('#num-resets')
 
 reset.addEventListener('click', function(){
-    if (teamGoal > teamGoal2) {
+    if (teamGoal.HTML > teamGoal2.HTML) {
         alert ("Team One Wins")
     } else {alert ("Team Two Wins")}
     let numresettot = Number(numreset.innerHTML) +1;
