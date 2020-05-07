@@ -21,6 +21,9 @@ teamOneCounter.addEventListener('click', function(){
     let shotsOne = Number(shootOne.innerHTML) +1;
 shootOne.innerHTML = shotsOne;
 
+let audio = new Audio('./assets/bow.mp3');
+audio.play();
+
 let randOne = Math.random()
 if (randOne < 0.5) {
     let totshotsOne = Number(teamGoal.innerHTML) +1;
@@ -45,6 +48,9 @@ const teamGoal2 = document.querySelector('#teamtwo-numgoals')
 teamTwoCounter.addEventListener('click', function(){
     let shotsTwo = Number(shootTwo.innerHTML) +1;
 shootTwo.innerHTML = shotsTwo;
+
+let audio = new Audio('./assets/bow.mp3');
+audio.play();
 
 let randTwo = Math.random()
 if (randTwo < 0.5) {
