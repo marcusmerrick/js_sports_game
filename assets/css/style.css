@@ -13,3 +13,8 @@
 #reset-container, h1 {
     text-align: center;
 }
+body {
+    background-image: url(../download.jpg);
+    color: greenyellow;
+    font-size: larger;
+}

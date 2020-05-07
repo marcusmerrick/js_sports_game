@@ -18,13 +18,13 @@ const teamOneCounter = document.querySelector("#teamone-shoot-button");
 const teamGoal = document.querySelector('#teamone-numgoals')
 
 teamOneCounter.addEventListener('click', function(){
-    let shotsOne = Number(shootOne.innerText) +1;
-shootOne.innerText = shotsOne;
+    let shotsOne = Number(shootOne.innerHTML) +1;
+shootOne.innerHTML = shotsOne;
 
 let randOne = Math.random()
 if (randOne < 0.5) {
-    let totshotsOne = Number(teamGoal.innerText) +1;
-    teamGoal.innerText = totshotsOne
+    let totshotsOne = Number(teamGoal.innerHTML) +1;
+    teamGoal.innerHTML = totshotsOne
 }
 })
 
@@ -43,13 +43,13 @@ const teamTwoCounter = document.querySelector("#teamtwo-shoot-button");
 const teamGoal2 = document.querySelector('#teamtwo-numgoals')
 
 teamTwoCounter.addEventListener('click', function(){
-    let shotsTwo = Number(shootTwo.innerText) +1;
-shootTwo.innerText = shotsTwo;
+    let shotsTwo = Number(shootTwo.innerHTML) +1;
+shootTwo.innerHTML = shotsTwo;
 
 let randTwo = Math.random()
 if (randTwo < 0.5) {
-    let totshotsTwo = Number(teamGoal2.innerText) +1;
-    teamGoal2.innerText = totshotsTwo
+    let totshotsTwo = Number(teamGoal2.innerHTML) +1;
+    teamGoal2.innerHTML = totshotsTwo
 }
 })
 
@@ -60,14 +60,14 @@ reset.addEventListener('click', function(){
     if (teamGoal > teamGoal2) {
         alert ("Team One Wins")
     } else {alert ("Team Two Wins")}
-    let numresettot = Number(numreset.innerText) +1;
-numreset.innerText = numresettot;
-    let shotsTwo = Number(shootTwo.innerText) +1;
-shootTwo.innerText = Number(0);
-    let shotsOne = Number(shootOne.innerText) +1;
-shootOne.innerText = Number(0);
-    let totshotsTwo = Number(teamGoal2.innerText) +1;
-teamGoal2.innerText = Number(0)
-    let totshotsOne = Number(teamGoal.innerText) +1;
-teamGoal.innerText = Number(0)
+    let numresettot = Number(numreset.innerHTML) +1;
+numreset.innerHTML = numresettot;
+    let shotsTwo = Number(shootTwo.innerHTML) +1;
+shootTwo.innerHTML = Number(0);
+    let shotsOne = Number(shootOne.innerHTML) +1;
+shootOne.innerHTML = Number(0);
+    let totshotsTwo = Number(teamGoal2.innerHTML) +1;
+teamGoal2.innerHTML = Number(0)
+    let totshotsOne = Number(teamGoal.innerHTML) +1;
+teamGoal.innerHTML = Number(0)
 })
